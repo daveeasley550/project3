@@ -1,6 +1,11 @@
+header{
+  text-align: center;
+}
+
 body{
     margin: 0 auto;
 }
+
 /* genereal css rules
 
 elements (h1,h6, p, div, )
