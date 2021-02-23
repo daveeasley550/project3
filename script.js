@@ -17,6 +17,7 @@ for (let i = 0; i < 40; i++) {
         .then(response => response.json())
         .then(data => {
             oldJokes.push(data.value.joke)
+            randomJoke.innerHTML = oldJokes[20]
         })
 }
 nextButton.addEventListener("click", function (e) {
@@ -33,8 +34,6 @@ randomButton.addEventListener("click", function (e) {
 })
 console.log(oldJokes)
 
-randomButton.click()
-nextButton.click()
 
 
 
