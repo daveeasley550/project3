@@ -2,7 +2,7 @@
 body{
     background: url(https://img.texasmonthly.com/2012/01/chucknorris.png?auto=compress&crop=faces&fit=fit&fm=jpg&h=0&ixlib=php-1.2.1&q=45&w=1120) no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
+    height: 800px;
     max-width: 1000px;
     overflow: hidden;
     border: solid red 3px;  
@@ -14,20 +14,20 @@ body{
   border: solid yellowgreen 3px;
   }
 
-.gallery {
+/* .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 0;
   transition: all 500ms ease;
-  }
+  } */
 
 .gallery-container {
   overflow: hidden;
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  border: solid blue 3px;
+  /* border: solid blue 3px; */
   color: rgb(255, 240, 247);
   text-align: center;
   display: block;
@@ -47,45 +47,71 @@ body{
 .randomButton {
   display: block;
   margin: 0 auto;
+  margin-top: 270px;
   background:darkgoldenrod;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   
 }
 .randomJoke {
   color: aliceblue;
-  border: solid blue;
+  border: solid orange;
   list-style: none;
   height: 500px;
-  max-width: 1000px;
-  background-position: center center;
+  /* max-width: 1000px; */
+  width: 75%;
+  background-position: center;
   background-size: cover;
-  text-align: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0 auto;
 }
-/* a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    /* align-items: center; */
+    border: solid pink;
+  } 
+   
+  .roundButtons {
+    border: solid black;
+    display: flex;
+    justify-content:space-between; 
+    margin-top: -300px;
+  }
+.previousButton{
+  display: flex;
+ 
 }
-
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.previous {
-  background-color: #f1f1f1;
-  color: black;
-}
-
-.next {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.round {
-  border-radius: 50%;
-} */
+ 
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+    
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+     
+  }
+  
+  .next {
+    background-color: #4CAF50;
+    color: white;
+    /* border: solid yellow; */
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* margin-left: 900px; */
+    
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
 
 
 /* Small devices (landscape phones, 576px and up) */

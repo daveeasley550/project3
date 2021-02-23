@@ -1,22 +1,19 @@
 const randomUrl = "http://api.icndb.com/jokes/random/"
 const url = "http://api.icndb.com/"
-let randomJoke =document.querySelector(".randomJoke")
+let randomJoke = document.getElementsByTagName("p")
 console.log(randomJoke)
 let randomButton = document.querySelector(".randomButton")
 
 let joke = function (data) {
-   randomJoke.innerHTML.src += `${data}`
+    randomJoke.innerText += `${data.value.joke}`
 }
 
 randomButton.addEventListener("click", function (e) {
     e.preventDefault()
-    fetch(randomUrl) 
-    .then(response => response.json())
-    .then(data=> joke(data.joke))
-       
-    
-    console.log(data.joke)
-    
+    fetch(randomUrl)
+        .then(response => response.json())
+        .then(data => joke(data.value.joke))
+
 })
 // const jsGallery = document.querySelector(".js-gallery")
 // const jsGalleryItems = document.querySelectorAll(".js-gallery-item")
