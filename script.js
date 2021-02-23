@@ -16,27 +16,25 @@ for (let i = 0; i < 40; i++) {
     fetch(randomUrl)
         .then(response => response.json())
         .then(data => {
-        oldJokes.push(data.value.joke)
-
+            oldJokes.push(data.value.joke)
         })
 }
 nextButton.addEventListener("click", function (e) {
     e.preventDefault()
-    randomJoke.innerText = oldJokes[counter += 1]
+    randomJoke.innerHTML = oldJokes[counter += 1]
 })
 previousButton.addEventListener("click", function (e) {
     e.preventDefault()
-    // randomJoke.innerText = oldJokes[i-1]
-    randomJoke.innerText = oldJokes[counter -= 1]
+    randomJoke.innerHTML = oldJokes[counter -= 1]
 })
 randomButton.addEventListener("click", function (e) {
     e.preventDefault()
-    randomJoke.innerText = oldJokes[counter += 1]
+    randomJoke.innerHTML = oldJokes[counter += 1]
 })
 console.log(oldJokes)
 
 randomButton.click()
-randomButton.click()
+nextButton.click()
 
 
 
