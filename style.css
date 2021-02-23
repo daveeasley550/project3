@@ -5,13 +5,19 @@ body{
     height: 800px;
     max-width: 1000px;
     overflow: hidden;
-    border: solid red 3px;  
+    
+    /* border: solid red 3px;   */
   }
     
 .title {
   max-width: 1000px;
   text-align: center;
-  border: solid yellowgreen 3px;
+  text-shadow: black  2px 0 10px;
+  display: block;
+  align-content: center;
+  
+  /* margin: 0 auto; */
+  /* border: solid yellowgreen 3px; */
   }
 
 /* .gallery {
@@ -49,15 +55,23 @@ body{
   margin: 0 auto;
   margin-top: 270px;
   background:darkgoldenrod;
-  /* margin-bottom: 60px; */
+  margin-bottom: 60px;
+  border-left: solid red;
+  border-right: solid red;
+  border-top: solid blue;
+  border-bottom: solid white;
   
 }
 .randomJoke {
-  color: aliceblue;
-  border: solid orange;
+  color: gold;
+  text-shadow: black  1px 0 10px;
+  font-size: 30px;
+  border-left: solid red;
+  border-right: solid blue;
+  border-top: solid white;
+  border-bottom: solid white;
   list-style: none;
   height: 500px;
-  /* max-width: 1000px; */
   width: 75%;
   background-position: center;
   background-size: cover;
@@ -66,17 +80,18 @@ body{
   align-items: center;
   flex-flow: wrap;
   margin: 0 auto;
+  padding-left: 30px;
 }
   a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
     /* align-items: center; */
-    border: solid pink;
+    /* border: solid pink; */
   } 
    
   .roundButtons {
-    border: solid black;
+    /* border: solid black; */
     display: flex;
     justify-content:space-between; 
     margin-top: -300px;
@@ -94,13 +109,13 @@ body{
   }
   
   .previous {
-    background-color: #f1f1f1;
-    color: black;
+    background-color: blue;
+    color: white;
      
   }
   
   .next {
-    background-color: #4CAF50;
+    background-color: red;
     color: white;
     /* border: solid yellow; */
     /* display: flex; */
@@ -111,6 +126,9 @@ body{
   
   .round {
     border-radius: 50%;
+  }
+  #p{
+    color: gold;
   }
 
 
