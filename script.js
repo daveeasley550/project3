@@ -1,4 +1,4 @@
-const randomUrl = "http://api.icndb.com/jokes/random/"
+const randomUrl = "https://api.icndb.com/jokes/random/"
 let randomJoke = document.querySelector("p")
 let randomButton = document.querySelector(".randomButton")
 let nextButton = document.querySelector(".nextButton")
