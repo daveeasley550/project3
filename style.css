@@ -31,9 +31,9 @@ body{
 .randomButton {
   display: block;
   margin: 0 auto;
-  margin-top: 270px;
+  /* margin-top: 270px; */
   background:darkgoldenrod;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   border-left: solid red;
   border-right: solid red;
   border-top: solid blue;
@@ -59,7 +59,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   
 }
 a {
@@ -71,8 +71,7 @@ a {
 .roundButtons {
   display: flex;
   justify-content:space-between; 
-  margin-top: -300px;
-  }
+align-items: center;  }
 
 a:hover {
   background-color: #ddd;
